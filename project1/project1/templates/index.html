@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #87CEFA, #4682B4);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .weather-widget {
+            padding: 20px;
+        }
+
+        .current-weather {
+            font-size: 24px;
+        }
+
+        .temperature {
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .forecast {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .day {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+            width: 80px;
+            text-align: center;
+        }
+
+        .day img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .day span {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-widget">
+        <div class="current-weather">
+            <h1>Some City</h1>
+            <div>Monday</div>
+            <div>50% Rain | East, 20 km/h | 1013 hPa</div>
+            <div class="temperature">+20°C</div>
+        </div>
+        <div class="forecast">
+            <div class="day">
+                <span>Sun</span>
+                <img src="sun.png" alt="Sunny">
+                <span>+25°C</span>
+            </div>
+            <div class="day">
+                <span>Mon</span>
+                <img src="cloudy.png" alt="Cloudy">
+                <span>+19°C</span>
+            </div>
+            <div class="day">
+                <span>Tue</span>
+                <img src="cloudy.png" alt="Cloudy">
+                <span>+19°C</span>
+            </div>
+            <div class="day">
+                <span>Wed</span>
+                <img src="rain.png" alt="Rainy">
+                <span>+15°C</span>
+            </div>
+            <div class="day">
+                <span>Thu</span>
+                <img src="rain.png" alt="Rainy">
+                <span>+10°C</span>
+            </div>
+            <div class="day">
+                <span>Fri</span>
+                <img src="storm.png" alt="Stormy">
+                <span>+8°C</span>
+            </div>
+            <div class="day">
+                <span>Sat</span>
+                <img src="sun.png" alt="Sunny">
+                <span>+20°C</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
